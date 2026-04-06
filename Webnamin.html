@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story | Jacob & Nicole</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Wecss.css">
+</head>
+<body>
+
+    <div id="lock-screen">
+        <div class="lock-card">
+            <div style="font-size: 2rem; margin-bottom: 10px;">🔒</div>
+            <h2>Our Website</h2>
+            <p>Enter The Password</p>
+            <input type="password" id="passInput" class="password-input" placeholder="••••••" oninput="checkPass()">
+            <p id="error-msg">That's not it, love. Try again.</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-link active" onclick="showTab('home')">Home</div>
+            <div class="nav-link" onclick="showTab('gallery')">Photos</div>
+            <div class="nav-link" onclick="showTab('messages')">Messages</div>
+            <div class="nav-link" onclick="showTab('Anniversary')">Anniversary</div>
+        </div>
+    </nav>
+
+    <div id="home" class="tab-section active">
+        <div class="home-content">
+            <p class="top-quote">"You'll be with me wherever I go"</p>
+            <h1 class="intro-title">Our Memories</h1>
+            <div class="video-box">
+                <video autoplay muted loop playsinline>
+                    <source src="https://assets.mixkit.co/videos/preview/mixkit-couple-walking-in-the-sea-at-sunset-1530-large.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p style="font-size:0.6rem; letter-spacing:2px; color:var(--muted-gray); margin-bottom:10px;">DAYS OF LOVING YOU</p>
+            <div id="timer">
+                <div class="timer-unit"><span id="days" class="timer-val">00</span><br><span class="timer-sub">DAYS</span></div>
+                <div class="timer-unit"><span id="hours" class="timer-val">00</span><br><span class="timer-sub">HOURS</span></div>
+                <div class="timer-unit"><span id="minutes" class="timer-val">00</span><br><span class="timer-sub">MINS</span></div>
+                <div class="timer-unit"><span id="seconds" class="timer-val">00</span><br><span class="timer-sub">SECS</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="gallery" class="tab-section">
+        <div class="content-wrap">
+            <h2 style="text-align:center; font-family:var(--heading-font); font-size: 2.2rem; margin-bottom:30px;">Picture Gallery</h2>
+            <div class="photo-grid">
+                <img src="Webpictures/Picnamin1.jpg" alt="Memory 1">
+                <img src="Webpictures/Picnamin2.jpg" alt="Memory 2">
+                <img src="Webpictures/Picnamin3.jpg" alt="Memory 3">
+                <img src="Webpictures/Picnamin4.jpg" alt="Memory 4">
+                <img src="Webpictures/Picnamin5.jpg" alt="Memory 5">
+                <img src="Webpictures/Picnamin6.jpg" alt="Memory 6">
+                <img src="Webpictures/Picnamin7.jpg" alt="Memory 7">
+                <img src="Webpictures/Picnamin8.jpg" alt="Memory 8">
+                <img src="Webpictures/Picnamin9.jpg" alt="Memory 9">
+                <img src="Webpictures/Picnamin10.jpg" alt="Memory 10">
+                <img src="Webpictures/Picnamin11.jpg" alt="Memory 11">
+                <img src="Webpictures/Picnamin12.jpg" alt="Memory 12">
+                <img src="Webpictures/Picnamin13.jpg" alt="Memory 13">
+                <img src="Webpictures/Picnamin14.jpg" alt="Memory 14">
+                <img src="Webpictures/Picnamin15.jpg" alt="Memory 15">
+            </div>
+        </div>
+    </div>
+
+    <div id="messages" class="tab-section">
+        <div class="content-wrap">
+            <h2 style="text-align:center; font-family:var(--heading-font); font-size: 2.2rem; margin-bottom:25px;">Love Letters</h2>
+            <div class="message-grid" id="message-container"></div>
+        </div>
+    </div>
+
+    <div id="Anniversary" class="tab-section">
+        <div class="content-wrap">
+             <h2 style="text-align:center; font-family:var(--heading-font); font-size: 2.2rem; margin-bottom:25px;">Our Journey</h2>
+        </div>
+    </div>
+
+    <script src="Webjs.js"></script>
+</body>
+</html>
